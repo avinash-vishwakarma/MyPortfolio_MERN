@@ -1,0 +1,9 @@
+.NavbarLink_Container {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.NavbarLink_Container li {
+  position: relative;
+}

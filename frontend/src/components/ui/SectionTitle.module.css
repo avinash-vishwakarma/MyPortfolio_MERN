@@ -1,0 +1,51 @@
+.titleContainer {
+  width: 100%;
+  height: 10%;
+  padding: 20px 0;
+  color: #efeff0;
+}
+
+.darkTitle {
+  color: #20232a;
+}
+
+.titleContainer h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.titleContainer p {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.borderBottom_container {
+  width: 10%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.borderBottom_container div {
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.darkTitle .borderBottom_container div {
+  background: #20232a;
+}
+
+.borderBottom_container div:first-child {
+  width: 40%;
+}
+
+.borderBottom_container div:last-child {
+  width: 50%;
+}

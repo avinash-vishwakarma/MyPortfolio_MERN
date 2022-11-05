@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-dark {
+  background: #20232a;
+  color: #efeff0;
+}
+
+.dark {
+  color: #20232a;
+}
+
+.blue {
+  color: #007a9c;
+}
