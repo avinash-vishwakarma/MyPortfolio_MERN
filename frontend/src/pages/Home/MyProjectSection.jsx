@@ -7,8 +7,16 @@ import "swiper/css";
 import upsideDownCurve from "../../assets/svgs/First_Section_botttom_curve.svg";
 
 import SingeProject from "../../components/ui/SingleProject";
+import useFetch from "../../hooks/useFetch";
+import { useEffect } from "react";
 
 const MyProjectSection = () => {
+  const { data, error, isLoading, request } = useFetch();
+
+  useEffect(() => {
+    request("/api/get-all-project");
+  }, [request]);
+
   return (
     <>
       <section className={`${classes.big_section} bg-dark`}>
@@ -27,29 +35,12 @@ const MyProjectSection = () => {
               disableOnInteraction: false,
             }}
           >
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SingeProject />
-            </SwiperSlide>
+            {data &&
+              data.payload.map((project) => (
+                <SwiperSlide key={project._id}>
+                  <SingeProject {...project} />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </Container>
       </section>

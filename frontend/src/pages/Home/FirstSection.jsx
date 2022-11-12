@@ -1,11 +1,15 @@
 import React from "react";
-import Container from "../../components/ui/Container";
-import classes from "./sectionStyle.module.css";
-import bottomCurve from "../../assets/svgs/First_Section_botttom_curve.svg";
-import { DarkButton } from "../../components/ui/Button";
 import { Icon } from "@iconify/react";
+
+import Container from "../../components/ui/Container";
+import { DarkButton } from "../../components/ui/Button";
+
+import classes from "./sectionStyle.module.css";
+
+import bottomCurve from "../../assets/svgs/First_Section_botttom_curve.svg";
 import HeadProfileImage from "../../assets/svgs/head_profile_image.svg";
 import LanguageLogoIcon from "../../assets/img/language_logo_icons.png";
+
 const FirstSection = () => {
   return (
     <section className={classes.big_section}>

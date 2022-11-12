@@ -1,5 +1,6 @@
 const ContactMe = require("../Models/ContactMe");
 const { validationResult } = require("express-validator");
+const ProjectModel = require("../Models/Project.model");
 
 module.exports.ContactMeController = async (req, res) => {
   const error = validationResult(req);
@@ -30,6 +31,23 @@ module.exports.ContactMeController = async (req, res) => {
       status: "error",
       error: {
         message: "someting went wrong please try again",
+      },
+    });
+  }
+};
+
+exports.GetAllProjectsController = async (req, res, next) => {
+  try {
+    const allProjects = await ProjectModel.find();
+    return res.json({
+      status: "ok",
+      payload: allProjects,
+    });
+  } catch (err) {
+    return res.status(500).json({
+      status: "error",
+      error: {
+        message: "error while finding the data",
       },
     });
   }

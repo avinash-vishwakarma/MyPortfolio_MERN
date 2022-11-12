@@ -1,0 +1,5 @@
+.tempForm input,
+.tempForm textarea,
+.tempForm button {
+  display: block;
+}

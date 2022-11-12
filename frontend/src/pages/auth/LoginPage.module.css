@@ -1,0 +1,44 @@
+.loginSection {
+  width: 100%;
+  height: 100vh;
+  background: #141414;
+}
+
+.loginFormContainer {
+  width: 30%;
+}
+
+.centerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginFormContainer input,
+.loginFormContainer button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.loginFormContainer h2 {
+  text-align: center;
+  color: rgb(214, 214, 214);
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.loginFormContainer button {
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.loginFormContainer input {
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid #4dadc7;
+  background: transparent;
+  color: #fff;
+}

@@ -1,14 +1,20 @@
-import React from "react";
+import React, { isValidElement } from "react";
 import classes from "./NavbarLink.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const NavbarLink = ({ children, to }) => {
   return (
     <li>
-      <Link to={to} className={classes.NavLink}>
+      <NavLink
+        to={to}
+        className={({ isActive }) =>
+          isActive ? classes.activeLink : classes.NavLink
+        }
+        end
+      >
         {children}
-      </Link>
+      </NavLink>
     </li>
   );
 };

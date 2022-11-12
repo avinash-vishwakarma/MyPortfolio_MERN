@@ -7,7 +7,7 @@ const NavbarLinks = () => {
     <ul className={classes.NavbarLink_Container}>
       <NavbarLink to="/">Home</NavbarLink>
       <NavbarLink to="/my-porjects">Projects</NavbarLink>
-      <NavbarLink to="/About">About</NavbarLink>
+      <NavbarLink to="/about-me">About</NavbarLink>
       <NavbarLink to="/contact-me">Contact me</NavbarLink>
     </ul>
   );

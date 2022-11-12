@@ -17,3 +17,8 @@
 .blue {
   color: #007a9c;
 }
+
+.bg-extra-dark {
+  background: #0e1013;
+  color: #efeff0;
+}

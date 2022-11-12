@@ -1,4 +1,5 @@
-.NavLink {
+.NavLink,
+.activeLink {
   text-decoration: none;
   display: flex;
   height: 100%;
@@ -43,6 +44,11 @@
 
 .drowDownLinks li a:hover {
   border-bottom: 4px solid #55b8d4;
+}
+
+.activeLink {
+  border-bottom: 4px solid #55b8d4;
+  color: #55b8d4;
 }
 
 .showDropDown {

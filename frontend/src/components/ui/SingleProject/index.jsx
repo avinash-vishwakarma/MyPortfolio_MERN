@@ -4,16 +4,13 @@ import TempImage from "../../../assets/img/longwebsiteImage.jpg";
 import { DarkButton } from "../Button";
 import { Icon } from "@iconify/react";
 
-const SingeProject = () => {
+const SingeProject = ({ title, shortDesc, img }) => {
   return (
     <>
       <div className={classes.imageContainer}>
-        <img src={TempImage} alt="" />
+        <img src={`http://localhost:5000/${img}`} alt="nothing found" />
       </div>
-      <strong className={classes.projectTitle}>
-        Title of the project that your are ging....
-      </strong>
-      <p className={classes.projctShortDescription}>type of the projet </p>
+      <strong className={classes.projectTitle}>{title}</strong>
       <div className={classes.projectButtonContainer}>
         <DarkButton>
           <Icon icon="carbon:blog" />
