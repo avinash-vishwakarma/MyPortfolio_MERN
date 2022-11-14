@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./SingleProject.module.css";
-import TempImage from "../../../assets/img/longwebsiteImage.jpg";
 import { DarkButton } from "../Button";
 import { Icon } from "@iconify/react";
 

@@ -1,16 +1,9 @@
 import React from "react";
+import classes from "./Container.module.css";
 
 const Container = (props) => {
   return (
-    <div
-      className={`${props.className}`}
-      style={{
-        width: "80%",
-        height: "100%",
-        margin: "0 auto",
-        border: "1px solid red",
-      }}
-    >
+    <div className={` ${classes.container} ${props.className}`}>
       {props.children}
     </div>
   );

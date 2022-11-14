@@ -1,7 +1,7 @@
 .big_section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh);
 }
 
 .bottomCurve {
@@ -103,4 +103,40 @@ _content h2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero_container {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .hero_content {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hero_content p {
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .hero_content button {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .skillBoxContainer {
+    flex-direction: column;
+  }
+
+  .big_section {
+    height: max-content;
+  }
+  .hero_imageContainer {
+    width: 90%;
+    margin: 20% auto;
+  }
 }

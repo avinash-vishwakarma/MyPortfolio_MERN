@@ -59,3 +59,41 @@
 .master {
   width: 95%;
 }
+
+@media only screen and (max-width: 1200px) {
+  .skillContainer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .skillLogoBox {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillContainer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .skillContainer svg {
+    font-size: 30px;
+  }
+
+  .skillContentContainer strong {
+    font-size: 15px;
+  }
+
+  .levelbox {
+    margin: 0;
+  }
+
+  .levelbox div {
+    font-size: 10px;
+  }
+
+  .skillContentContainer {
+    padding: 0 5px;
+  }
+}

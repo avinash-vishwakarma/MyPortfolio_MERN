@@ -54,3 +54,18 @@
 .showDropDown {
   display: block;
 }
+
+@media only screen and (max-width: 1200px) {
+  .NavLink,
+  .activeLink {
+    display: flex;
+    height: 70px;
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+
+  .activeLink {
+    border-bottom: 4px solid #55b8d4;
+    color: #55b8d4;
+  }
+}

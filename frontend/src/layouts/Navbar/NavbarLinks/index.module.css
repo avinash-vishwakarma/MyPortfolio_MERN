@@ -7,3 +7,26 @@
 .NavbarLink_Container li {
   position: relative;
 }
+
+.showNavMenu {
+  left: 0 !important;
+}
+
+@media only screen and (max-width: 765px) {
+  .NavbarLink_Container {
+    position: fixed;
+    top: 70px;
+    left: -40%;
+    background: #0e1013;
+    display: block;
+    width: 40%;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .NavbarLink_Container {
+    width: 100%;
+    left: -100%;
+  }
+}

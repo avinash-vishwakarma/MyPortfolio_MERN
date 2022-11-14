@@ -11,3 +11,41 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.menuSliderButton {
+  display: none;
+}
+
+.showInMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 765px) {
+  .menuSliderButton {
+    display: block;
+  }
+
+  .dontShowOnMobel {
+    display: none !important;
+  }
+
+  .showInMobile {
+    display: block;
+    color: #007a9c;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menuSliderButton {
+    display: block;
+  }
+
+  .dontShowOnMobel {
+    display: none !important;
+  }
+
+  .showInMobile {
+    display: block;
+    color: #007a9c;
+  }
+}

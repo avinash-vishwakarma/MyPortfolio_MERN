@@ -21,16 +21,6 @@ app.use(
   })
 );
 
-app.use((req, res, next) => {
-  console.log(req.files);
-  next();
-});
-
-app.get("/", (req, res) => {
-  const alldata = ContactMe.find();
-  res.send(JSON.stringify(alldata));
-});
-
 app.use("/api", GenralRoutes);
 app.use("/api", isLogin, AdminRoutes);
 

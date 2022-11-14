@@ -23,7 +23,6 @@ exports.ContactMessagesController = async (req, res, next) => {
 exports.CreateNewProjectController = async (req, res, next) => {
   const error = validationResult(req);
   if (!error.isEmpty()) {
-    console.log(error);
     return res.status(422).json({
       status: "error",
       error: {

@@ -46,11 +46,9 @@ const Footer = ({ children }) => {
           <FooterTitle>Contact Information</FooterTitle>
           <ul className={classes.footer__linkContainer}>
             <FooterLinks>
-              {" "}
               <Icon icon="eva:phone-call-fill" /> +91 7000789511{" "}
             </FooterLinks>
             <FooterLinks>
-              {" "}
               <Icon icon="eva:email-outline" />{" "}
               avinashvishwakarma.code@gmail.com
             </FooterLinks>
