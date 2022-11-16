@@ -1,5 +1,113 @@
-.mainSection {
+.contactSectionContainer {
   width: 100%;
   height: 100vh;
   margin-top: 70px;
+  background: rgb(17, 17, 17);
+}
+
+.pageTitle {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pageTitle h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.pageTitle p {
+  font-weight: 300;
+  font-size: 35px;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 3px solid #007a9c;
+  padding-bottom: 10px;
+}
+
+.contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100% - 200px);
+}
+
+.contactDetailsSection {
+  width: 40%;
+}
+
+.contactDeails_box {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactDetails_logoCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px #4dacc78d;
+}
+
+.contactDetails_logoCircle svg {
+  font-size: 30px;
+  color: rgb(226, 226, 226);
+}
+
+.contactDetails_content {
+  margin-left: 30px;
+}
+
+.contactDetails_content h4 {
+  font-size: 25px;
+  color: #007a9c;
+}
+
+.contactDetails_content p {
+  font-size: 25px;
+  color: rgb(225, 225, 225);
+  font-weight: 300;
+}
+
+.contactForm_container input,
+.contactForm_container textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #fefefe75;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  color: rgb(234, 234, 234);
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.contactForm_container input {
+  height: 50px;
+}
+
+.contactForm_container button {
+  width: 40%;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #fefefe75;
+  font-size: 17px;
+  color: rgb(234, 234, 234);
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactForm_container button:hover {
+  background: #007a9c;
+  color: #fff;
 }
