@@ -1,4 +1,114 @@
-.tempContainer {
-  height: 100vh;
-  padding-top: 70px;
+.aboutMeSection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+.aboutMeContentContainer {
+  padding-top: 3%;
+  display: flex;
+}
+
+.aboutMeContentContainer img {
+  width: 30%;
+  height: fit-content;
+}
+
+.aboutMeData {
+  width: 60%;
+  height: auto;
+  color: rgb(47, 47, 47);
+  text-transform: capitalize;
+}
+
+.aboutMeData h1 {
+  font-size: 35px;
+  margin-top: 2%;
+}
+
+.aboutMeData h1 span {
+  color: #007a9c;
+}
+
+.aboutMeData h4 {
+  margin-top: 10px;
+}
+
+.aboutMeData p {
+  margin-top: 25px;
+  line-height: 150%;
+  font-size: 18px;
+}
+
+.aboutMeData p br {
+  margin-bottom: 10px;
+}
+
+.MoreDetailsSection {
+  display: flex;
+  margin-top: 20px;
+}
+
+.MoreDetailsSection .LogoBox {
+  width: 100px;
+  height: 100px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(210, 210, 210);
+}
+
+.LogoBox svg {
+  font-size: 30px;
+}
+
+.personalDeatilsData {
+  margin-bottom: 2%;
+}
+
+.personalDeatilsData ul {
+  list-style: none;
+}
+.personalDeatilsData h4 {
+  color: #007a9c;
+  margin-bottom: 15px;
+}
+
+.personalDeatilsData {
+  margin-left: 20px;
+}
+
+.personalDeatilsData strong {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 765px) {
+  .aboutMeContentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMeContentContainer img {
+    display: block;
+    width: 40%;
+  }
+  .aboutMeData {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .MoreDetailsSection .LogoBox {
+    width: 50px;
+    height: 50px;
+  }
+  .aboutMeContentContainer img {
+    width: 70%;
+  }
+  .aboutMeSection {
+    padding-bottom: 5%;
+  }
 }

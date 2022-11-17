@@ -16,7 +16,7 @@ const FirstSection = () => {
       <Container className={classes.hero_container}>
         <div className={classes.hero_content}>
           <h3>Hello.</h3>
-          <h1 className="blue">i am avinash vishwakarma</h1>
+          <h1 className="blue">I’m Avinash Vishwakarma</h1>
           <h2 className="dark">Full Stack Web developer</h2>
           <p>
             I am a Self taught Developer Who is ready to learn any thing at any
