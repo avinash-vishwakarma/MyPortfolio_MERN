@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Button.module.css";
 
 const Button = ({ onClick, type = "button", className, children }) => {
@@ -27,6 +28,14 @@ export const DarkButton = ({
     >
       {children}
     </button>
+  );
+};
+
+export const LinkDarkButton = ({ children, to, className }) => {
+  return (
+    <Link className={`${classes.Dark_Button} ${className} `} to={to}>
+      {children}
+    </Link>
   );
 };
 

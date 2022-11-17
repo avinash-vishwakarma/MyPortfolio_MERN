@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import Layout from "../../layouts";
 import useFetch from "../../hooks/useFetch";
 import classes from "./myProjects.module.css";
+import Container from "../../components/ui/Container";
+import tempimage from "../../assets/img/longwebsiteImage.jpg";
+import { LinkDarkButton } from "../../components/ui/Button";
+import { Icon } from "@iconify/react";
 
 const MyProject = () => {
   const { data, isLoading, error, request } = useFetch();
@@ -13,14 +17,27 @@ const MyProject = () => {
 
   return (
     <Layout>
-      <div className={classes.tempHoldingContainer}>
-        {data &&
-          data.payload.map((project) => (
-            <div key={project._id} className={classes.tempProjectbox}>
-              {project.title}
-            </div>
-          ))}
-      </div>
+      <section className={classes.MyprojectSection}>
+        <Container className={classes.projectCardContainer}>
+          {data &&
+            data.payload.map((project) => (
+              <div className={classes.CardContainer} key={project._id}>
+                <div className={classes.cardImageContainer}>
+                  <img src={`http://localhost:5000/${project.img}`} />
+                </div>
+
+                <div className={classes.cardDataContainer}>
+                  <h4>{project.title}</h4>
+                  <p>{project.shortDesc}</p>
+
+                  <LinkDarkButton to={"/"}>
+                    <Icon icon="fluent-mdl2:git-hub-logo" /> git hub
+                  </LinkDarkButton>
+                </div>
+              </div>
+            ))}
+        </Container>
+      </section>
     </Layout>
   );
 };

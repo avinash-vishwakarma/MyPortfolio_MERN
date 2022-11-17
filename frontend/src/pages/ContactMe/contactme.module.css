@@ -111,3 +111,59 @@
   background: #007a9c;
   color: #fff;
 }
+
+@media only screen and (max-width: 1200px) {
+  .contentBox {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .contactDetailsSection {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contactSectionContainer {
+    height: max-content;
+  }
+}
+
+@media only screen and (max-width: 616px) {
+  .contactDetails_logoCircle {
+    width: 50px;
+    height: 50px;
+  }
+  .contactDetails_logoCircle svg {
+    font-size: 15px;
+  }
+
+  .contactDetails_content h4 {
+    font-size: 15px;
+  }
+
+  .contactDetails_content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pageTitle h1 {
+    font-size: 15px;
+  }
+
+  .pageTitle p {
+    font-size: 25px;
+  }
+
+  .contactDetails_content h4 {
+    font-size: 15px;
+  }
+
+  .contactDetails_content p {
+    font-size: 12px;
+  }
+
+  .contactForm_container button {
+    font-size: 15px;
+  }
+}
